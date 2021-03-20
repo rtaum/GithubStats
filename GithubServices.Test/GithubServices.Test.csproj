@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GithubServices\GithubServices.csproj" />
+    <ProjectReference Include="..\GithubStats\GithubStats.csproj" />
   </ItemGroup>
 
 </Project>
