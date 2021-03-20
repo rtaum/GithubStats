@@ -1,4 +1,6 @@
 using NSubstitute;
+using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -7,19 +9,30 @@ namespace GithubServices.Test
 	public class GithubServiceTests
 	{
 		[Fact]
-		public void For_CommitsCountInLastMonth_GreatherThan50_RepositoryStatus_MustBeVibrant()
+		public async Task For_CommitsCountInLastMonth_GreatherThan50_RepositoryStatus_MustBeVibrant()
 		{
 			// Arrange
-			var _githubService = Substitute.For<IGithubService>();
-			//var _githubApiClient = Substitute.For<IGithubApiClient>();
+			var _githubApiClient = Substitute.For<IGithubApiClient>();
+			_githubApiClient.GetCommitsAsync(Arg.Any<string>(), Arg.Any<string>()).ReturnsForAnyArgs(new List<Commit>()
+			{
+				new Commit
+				{
+					CommitDetail = new CommitDetails
+                    {
+						Author = new Author
+                        {
+							CommitDate = DateTime.UtcNow.AddDays(-1)
+                        }
+                    }
+				}
+			});
+			var _githubService = new GithubService(_githubApiClient);
 
 			// Act
-			var repositoryStatus = _githubService.GetRepositoryStatusAsync("owner", "repository");
-			//var commits = _githubApiClient.GetCommitsAsync("owner", "repository");            
-
+			var repositoryStatus = await _githubService.GetRepositoryStatusAsync("owner", "repository");
+			
 			// Assert
-			Assert.IsType<Task<RepositoryStatus>>(repositoryStatus);
-			//Assert.InRange<int>(commits.Count(), 51, int.MaxValue);
+			Assert.Equal(RepositoryStatus.BarelyAlive, repositoryStatus);			
 		}
 	}
 }
