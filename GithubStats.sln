@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubStats", "GithubStats\GithubStats.csproj", "{257D068E-2C36-4E56-BE5E-77CACFDAC372}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubServices", "GithubServices\GithubServices.csproj", "{2092114C-FE76-4245-AD2A-5DD30418A294}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{257D068E-2C36-4E56-BE5E-77CACFDAC372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{257D068E-2C36-4E56-BE5E-77CACFDAC372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{257D068E-2C36-4E56-BE5E-77CACFDAC372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{257D068E-2C36-4E56-BE5E-77CACFDAC372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2092114C-FE76-4245-AD2A-5DD30418A294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2092114C-FE76-4245-AD2A-5DD30418A294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2092114C-FE76-4245-AD2A-5DD30418A294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2092114C-FE76-4245-AD2A-5DD30418A294}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F12A38E2-D0E4-4431-94FD-A1ABCB1C4CA4}
+	EndGlobalSection
+EndGlobal
