@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubStats", "GithubStats\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubServices", "GithubServices\GithubServices.csproj", "{2092114C-FE76-4245-AD2A-5DD30418A294}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubServices.Test", "GithubServices.Test\GithubServices.Test.csproj", "{C969DD2C-2781-4259-90AC-7DC0CEC11931}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2092114C-FE76-4245-AD2A-5DD30418A294}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2092114C-FE76-4245-AD2A-5DD30418A294}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2092114C-FE76-4245-AD2A-5DD30418A294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C969DD2C-2781-4259-90AC-7DC0CEC11931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C969DD2C-2781-4259-90AC-7DC0CEC11931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C969DD2C-2781-4259-90AC-7DC0CEC11931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C969DD2C-2781-4259-90AC-7DC0CEC11931}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
